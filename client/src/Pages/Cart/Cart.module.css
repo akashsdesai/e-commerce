@@ -1,0 +1,17 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.price{
+  display: flex;
+  gap:25px;
+  justify-content: center;
+  margin: 15px 0;
+}
+
+.left p, .right h4{
+  margin: 10px;
+}

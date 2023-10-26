@@ -1,0 +1,52 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+.box{
+  padding:30px 0 15px 0;
+  width: 800px;
+  min-width: 350px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+ /*  box-shadow: 0 0 10px rgba(0,0,0,0.6); */
+  border-radius: 15px;
+}
+
+.btn{
+  display: flex;
+  flex-direction: column;
+}
+
+.btn{
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  margin: 25px 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn button, .logout{
+  padding: 12px 35px;
+  margin: 15px 0;
+  border-radius: 25px;
+  border: none;
+  background-image: linear-gradient(to right, #FF512F 0%, #F09819  51%, #FF512F  100%);
+  background-size: 200% auto;
+  color: white; 
+  text-align: center; 
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+.btn button:hover{
+  transform: scale(1.05);
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
