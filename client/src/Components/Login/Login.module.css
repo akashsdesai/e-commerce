@@ -1,0 +1,40 @@
+.inputs{
+  margin: 25px 0;
+  display: flex;
+  flex-direction: column;
+  gap:15px;
+  align-items: center;
+}
+
+.inputs input{
+  padding: 10px 20px;
+  width: 235px;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 0 3px rgba(0,0,0,0.8);
+}
+
+.inputs button{
+  padding: 12px 35px;
+  margin: 15px 0;
+  border-radius: 25px;
+  width: fit-content;
+  border: none;
+  background-image: linear-gradient(to right, #FF512F 0%, #F09819  51%, #FF512F  100%);
+  background-size: 200% auto;
+  color: white; 
+  text-align: center; 
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+.inputs button:hover{
+  transform: scale(1.05);
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.goto{
+  margin-top:30px ;
+}

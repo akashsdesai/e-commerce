@@ -1,0 +1,63 @@
+.container{
+  margin: 3% 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content{
+  display: flex;
+  justify-content:space-between;
+  margin-top:5%;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.6);
+  max-width: 750px;
+}
+
+.oldPrice{
+  text-decoration: line-through;
+  margin: 0 10px;
+  font-weight: 500;
+  color: grey;
+}
+
+.left{
+  display: flex;
+  width: 100%;
+  max-width: 400px;
+  justify-content:start;
+}
+
+.left img{
+  height:fit-content;
+  width: 80%;
+}
+
+.right{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.ratings{
+  margin:15px 0;
+  display: flex;
+  align-items: center;
+  gap:5px;
+}
+.ratings img{
+  width: 15px;
+  height: fit-content;
+}
+
+@media screen and (max-width:850px) {
+  .content{
+    flex-direction: column;
+    align-items: center;
+  }
+  .left{
+    justify-content: center;
+    margin-bottom: 25px;
+  }
+}

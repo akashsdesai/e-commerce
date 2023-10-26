@@ -1,0 +1,162 @@
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 55px;
+  box-shadow: 0 1px 3px -2px black;
+  font-family: Roboto;
+  position: relative;
+  z-index: 100;
+}
+
+.navLogo{
+  min-width: 70px;
+  width: 70px;
+}
+
+.navLogo img{
+  width: 100%;
+  cursor: pointer;
+}
+
+.navMenuItems{
+  display: flex;
+  width:500px;
+  min-width: 250px;
+  justify-content: space-around;
+  padding: 0px;
+  align-items: center;
+  margin: 0;
+  font-size: 18px;
+  z-index: 101;
+}
+
+.navMenu{
+  display: flex;
+  justify-content: space-between;
+  min-width: 620px;
+  width: 800px;
+  align-items: center;
+}
+
+
+.navMenuItems li{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.navMenuItems hr{
+  border:none ;
+  width: 80%;
+  height: 3px;
+  border-radius: 10px;
+  background: #ff4141;
+}
+
+.navLoginCart{
+  display: flex;
+  justify-content: space-between;
+  width: 180px;
+  min-width: 60px;
+  align-items: center;
+  position: relative;
+}
+
+.navLoginCart button{
+  padding: 10px 27px;
+  border: none;
+  border-radius: 20px;
+  background-image: linear-gradient(to right, #fda085 0%, #f6d365 51%,  #fda085 100%);
+  transition: 0.5s;
+  background-size: 400% auto;
+  color: whitesmoke;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Roboto;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.navLoginCart button:hover{
+  background-position: right center; 
+}
+
+.navLoginCart button :active{
+  background-image:none;
+}
+
+.navLoginCart img{
+  width: 30px;
+  cursor: pointer;
+}
+
+.count{
+  background:red;
+  padding:1px 6px;
+  margin: 0;
+  font-size: 13px;
+  border-radius: 50px;
+  color: whitesmoke;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: -10px;
+  top: -7px;
+}
+
+
+.ham{
+  width: 40px;
+  display: none;
+}
+.ham img{
+  width: 100%;
+}
+@media screen and (max-width:850px) {
+  .navMenu{
+    flex-direction: column;
+    position: absolute;
+    right: -690px;
+    bottom: -320px;
+    background: rgba(248, 248, 248, 0.61);
+    min-width: 150px;
+    width:55%;
+    padding: 30px 20px;
+    border-radius: 25px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    transition: all 0.4s ;
+  }
+  .count{
+    bottom: 25px;
+    top:auto;
+    right: auto;
+    left: 95px;
+  }
+  .navLoginCart{
+    flex-direction: column;
+    gap: 25px;
+    margin: 25px 0 0px 0;
+  }
+
+  .navMenuItems{
+    flex-direction: column;
+    gap:25px;
+    width: 30px;
+  }
+  .ham{
+    display: flex;
+  }
+
+  .hold{
+    display: flex;
+    right: 40px;
+    bottom: -330px;
+  }
+
+}
